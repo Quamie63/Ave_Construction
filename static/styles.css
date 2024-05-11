@@ -1,0 +1,158 @@
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1920x1080/?construction') center/cover no-repeat;
+            animation: backgroundAnimation 20s infinite;
+        }
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .navbar {
+            background: transparent !important;
+        }
+        .navbar-brand img {
+            max-height: 40px;
+        }
+        .nav-link {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .nav-link:hover {
+            color: #dcccc0;
+        }
+        .jumbotron {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 100px 20px;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        .text-center {
+            color: wheat;
+        }
+        .btn-secondary {
+            background-color: wheat;
+            border-color: wheat;
+            color: white;
+            border-radius: 25px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: wheat;
+            border-color: wheat;
+            transform: scale(1.1);
+            color: #fff;
+        }
+        .section {
+            padding: 50px 0;
+        }
+        .card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+        }
+        .card img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .card-text {
+            font-size: 14px;
+            color: #555;
+        }
+        .footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .footer p {
+            margin-bottom: 20px;
+        }
+        .footer a {
+            color: #feb47b;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons {
+            margin-top: 30px;
+        }
+        .footer .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            color: #222;
+            font-size: 20px;
+            line-height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .footer .social-icons a:hover {
+            background-color: #feb47b;
+            color: #fff;
+        }
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        .fadeInUp {
+            animation-name: fadeInUp;
+        }
+        .fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+        .fadeInRight {
+            animation-name: fadeInRight;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
